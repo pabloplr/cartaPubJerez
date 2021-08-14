@@ -6,4 +6,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             document.getElementById('explicacion').classList.remove('oculto');
         });
     });
+    document.getElementById('cerrar_explicacion').addEventListener('click', function(event){
+        document.getElementById('explicacion').classList.add('oculto');
+    });
 });
