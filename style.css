@@ -14,7 +14,7 @@ body{
 }
 /* ------------Tarjeta producto------------ */
 .producto{
-    /* border: solid 1px red; */
+    border: solid 1px red;
     width: 85%;
     margin: auto;
 }
@@ -54,6 +54,7 @@ body{
 
 .img_producto{
     height: 250px;
+    width: 347px;
 }
 
 .nombre{
