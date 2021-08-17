@@ -74,8 +74,8 @@ body{
     position: fixed;
     z-index: 999;
 }
-.explicacion div{
-    background: #fff;
+.explicacion > div{
+    background: rgba(24, 24, 24, 0.356);
     border-radius: 2px;
     box-shadow: 0 1px 3px rgb(33 41 52 / 75%);
     box-sizing: content-box;
