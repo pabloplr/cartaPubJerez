@@ -97,10 +97,10 @@ const carta = [
     },
     {
         nombre: 'aguila',
-        precio: '3,99 €',
-        cantidad: '33 cl',
+        precio: '1,99 €',
+        cantidad: '63 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'no ta riquisima papa'
     },
     {
         nombre: 'aguila',
