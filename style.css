@@ -29,13 +29,6 @@ body{
     width: 32px;
     height: 32px;
 }
-/* 
-.precio{
-    color: white;
-}
-.cantidad{
-    color: white;
-} */
 
 .header_producto{
     display: flex;
@@ -46,6 +39,7 @@ body{
     text-align: center;
     color: white;
     font-family: 'Prompt', sans-serif;
+    margin-top: 0px;
 }
 
 .info p{

@@ -94,7 +94,7 @@ function generarBoton(header, titulo, img){
 // ---------------------CARTA-------------------------
 const carta = [
     {
-        titulo: 'cervezas',
+        titulo: 'CERVEZAS',
         img:'img/botones/beer.png'
     },
     {
