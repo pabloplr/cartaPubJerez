@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         generarProducto(productos[0], precio, cantidad, nombre, img, index);
     });
 
-    // console.log(document.getElementsByClassName('btn_info'));
     document.querySelectorAll('.btn_explicacion').forEach(element => {
         element.addEventListener('click', function(event){
             // console.log('mostrando menu');
@@ -28,6 +27,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     document.getElementById('cerrar_explicacion').addEventListener('click', function(event){
         document.getElementById('explicacion').classList.add('oculto');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 
 });
@@ -124,7 +133,7 @@ const carta = [
         descripcion: 'ta riquisima papa'
     },
     {
-        nombre: 'aguila',
+        nombre: 'cafe',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',

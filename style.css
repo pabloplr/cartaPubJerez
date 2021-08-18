@@ -1,6 +1,7 @@
 body{
     background-repeat: round;
     background-image: url(img/fondo.png);
+    font-family: 'Comfortaa', cursive;
 }
 
 .logo{
@@ -11,6 +12,9 @@ body{
 .nav_bar{
     display: flex;
     justify-content: center;
+}
+.nav_bar img{
+    width: 100px;
 }
 /* ------------Tarjeta producto------------ */
 .producto{
@@ -39,6 +43,7 @@ body{
 .titulo{
     text-align: center;
     color: white;
+    font-family: 'Prompt', sans-serif;
 }
 
 .info p{
