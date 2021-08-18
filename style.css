@@ -64,7 +64,7 @@ body{
 /* ------------------------------------------------ */
 /* ------------Tarjeta de explicacion------------ */
 .explicacion{
-    background: rgba(33, 41, 52, .85);
+    /* background: rgba(33, 41, 52, .85); */
     left: 0;
     bottom: 0;
     right: 0;
@@ -74,8 +74,8 @@ body{
     z-index: 999;
 }
 .explicacion > div{
-    background: rgba(24, 24, 24, 0.356);
-    border-radius: 2px;
+    background: rgba(24, 24, 24, 0.767);
+    border-radius: 10px;
     box-shadow: 0 1px 3px rgb(33 41 52 / 75%);
     box-sizing: content-box;
     display: flex;
@@ -88,6 +88,12 @@ body{
     font-size: 1.3rem;
     width: 75%;
     height: 85%;
+}
+.explicacion .info{
+    margin-top: 28px;
+}
+.explicacion .descripcion{
+    color: white;
 }
 /* ------------------------------------------------ */
 /* ------------Utilidades------------ */
