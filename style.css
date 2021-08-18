@@ -2,11 +2,13 @@ body{
     background-repeat: round;
     background-image: url(img/fondo.png);
     font-family: 'Comfortaa', cursive;
+    margin: 0px;
 }
 
 .logo{
-    width: 40%;
-    margin:20% 30%;
+    width: 100%;
+    /* margin:20% 20%; */
+    margin-bottom: 80px;
 }
 
 .nav_bar{
@@ -50,6 +52,7 @@ body{
     margin: 0px;
     color: white;
     font-weight: bold;
+    
 }
 
 .img_producto{
@@ -59,7 +62,7 @@ body{
 
 .img_producto img{
     height: 250px;
-    width: 90px;
+    width: 74px;
 }
 
 .nombre{
@@ -99,6 +102,22 @@ body{
 }
 .explicacion .descripcion{
     color: white;
+    font-size: 17px;
+    text-align: center;
+}
+.explicacion button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+.explicacion button img {
+    width: 30px;
 }
 /* ------------------------------------------------ */
 /* ------------Utilidades------------ */

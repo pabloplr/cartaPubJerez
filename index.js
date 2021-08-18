@@ -98,59 +98,59 @@ const carta = [
         img:'img/botones/beer.png'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'judas',
         precio: '1,99 €',
         cantidad: '63 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'no ta riquisima papa'
+        descripcion: 'Judas es una cerveza estilo rubia belga, de fuerte color oro, sabor muy intenso y contrapunto de notas dulces y amargas. Cerveza original de Bélgica fue premio “Selección del mundo”.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'cafe',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
-        nombre: 'aguila',
+        nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
         img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'ta riquisima papa'
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     }
 ]
