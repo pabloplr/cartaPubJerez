@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(event) {
     const productos = document.getElementsByClassName('productos');
     // console.log(productos[0]);
-    const header = document.getElementsByTagName('header');
-    carta.forEach(({titulo, nombre, precio, cantidad, img, descripcion}, index) =>{
+    const buttons = document.getElementById('buttons');
+    // const buttons = crearElemento('div', 'buttons');
+    // header.appendChild(buttons);
+    carta.forEach(({titulo, nombre, precio, cantidad, img, giff, descripcion}, index) =>{
 
         if(titulo){
-            generarTitulo(productos[0], titulo);
-            generarBoton(header[0],titulo,img);
+            generarTitulo(productos[0], titulo, giff);
+            generarBoton(buttons,titulo,img);
             return;    
         } 
         generarProducto(productos[0], precio, cantidad, nombre, img, index);
@@ -79,78 +81,263 @@ function generarProducto(productos, precio_txt, cantidad_txt, nombre_txt, img, i
     info.appendChild(cantidad);
 }
 
-function generarTitulo(productos, tit){
-    const titulo = crearElemento('h1', 'titulo', tit );
+// function generarTitulo(productos, tit){
+//     const titulo = crearElemento('h1', 'titulo', tit );
+//     titulo.setAttribute('id', tit)
+//     productos.appendChild(titulo);
+// }
+function generarTitulo(productos, tit, giff){
+    const titulo = crearElemento('img', 'titulo',null, giff);
     titulo.setAttribute('id', tit)
     productos.appendChild(titulo);
 }
 
-function generarBoton(header, titulo, img){
+function generarBoton(buttons, titulo, img){
     const btn = crearElemento('a', 'nav_bar');
     btn.setAttribute('href', `#${titulo}`);
     btn.appendChild(crearElemento('img', 'a', null, img));
-    header.appendChild(btn);
+    buttons.appendChild(btn);
 }
 // ---------------------CARTA-------------------------
 const carta = [
     {
         titulo: 'CERVEZAS',
-        img:'img/botones/beer.png'
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/01.gif'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
-    },
-    {
-        nombre: 'judas',
-        precio: '1,99 €',
-        cantidad: '63 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
-        descripcion: 'Judas es una cerveza estilo rubia belga, de fuerte color oro, sabor muy intenso y contrapunto de notas dulces y amargas. Cerveza original de Bélgica fue premio “Selección del mundo”.'
-    },
-    {
-        nombre: 'indio',
-        precio: '3,99 €',
-        cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/001.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/002.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/003.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        titulo: 'CAFES',
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/02.gif'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/004.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/005.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/006.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     },
     {
         nombre: 'indio',
         precio: '3,99 €',
         cantidad: '33 cl',
-        img: 'img/productos/cervezas/cerveza1.png',
+        img: 'img/productos/007.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/008.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/009.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        titulo: 'INFUSIONES',
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/03.gif'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/010.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/011.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        titulo: 'REFRESCOS',
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/04.gif'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/012.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/013.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/014.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/015.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/016.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/017.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/018.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/019.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/020.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/021.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/022.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/023.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/024.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        titulo: 'COMIDA',
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/05.gif'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/025.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/026.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/027.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        titulo: 'POSTRES',
+        img:'img/botones/beer.png',
+        giff: 'img/titulos/06.gif'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/028.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/029.PNG',
+        descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
+    },
+    {
+        nombre: 'indio',
+        precio: '3,99 €',
+        cantidad: '33 cl',
+        img: 'img/productos/030.PNG',
         descripcion: 'Nuestra cerveza de barril en botella. Cerveza tipo lager de color rubio brillante, espuma consistente blanco marfil y aroma frutal a manzana madura. Una cerveza equilibrada, destacando en su sabor el amargor suave sobre el dulce anisado de la malta.'
     }
 ]
